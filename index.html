@@ -1,49 +1,102 @@
- <!-- Este é um comentario em Html. -->
- <!DOCTYPE HTML> <!-- Esse é o DTD do HTML -->
- <!-- DTD: document tpe definition, versão do Html
+<!-- Este é um comentario em Html. -->
+<!DOCTYPE html>
+<!-- Esse é o DTD do HTML -->
+<!-- DTD: document tpe definition, versão do Html
  que deve ser carregada. -->
- 
- <html> 
- <!-- primeiro filho do html. head -->
- <head>
-	
-	<meta charset="UTF-8"/>
-	<meta name="viewport" contet = "width:device-width,initial-scale=1.0"/>
-	<title> Exemplo </title>
 
-	<link rel="stylesheet" href="styles.css">
- 
- </head>
- 
- <body>
-	
-	<div class="container">
+<html lang="pt-BR">
+  <!-- primeiro filho do html. head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" contet="width:device-width,initial-scale=1.0" />
+    <title>Página Basica</title>
 
-		<header class="cabecalho">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-			<h1 style="text-align: center;border:solid 2px #c52929">Minha página</h1>
-			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Sobre</a></li>
-					<li><a href="#">Contato</a></li>
-				</ul>
-			</nav>
+  <body>
+    <div class="container">
+      <header class="cabecalho">
+        <h1 style="text-align: center; border: solid 2px #c52929">
+          Minha página
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
 
-		</header>
-
-		<header>
-			<nav>
-				<ul>
-					<li><a href="#">Item - 1</a></li>
-					<li><a href="#">Item - 2</a></li>
-					<li><a href="#">Item - 3</a></li>
-				</ul>
-			</nav>
-		</header>
-
-	</div>
-
- </body>
- 
- </html>
+      <section>
+        <!-- vai haver conteudo -->
+        <div>
+          <h2>help</h2>
+          <p>
+            <span>HELP</span> Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Iste eaque odio non nulla, tempore assumenda! Neque
+            exercitationem labore, placeat, blanditiis ut quo non sunt,
+            doloribus aspernatur ad laboriosam dicta. Voluptas nam recusandae
+            blanditiis quaerat ab distinctio illo officiis dolorem quod saepe
+            libero tempore dicta sequi dolor quas eaque expedita, obcaecati
+            possimus omnis placeat natus? Maxime sit dolor ea facilis illo
+            perferendis autem ut. Alias similique iure dolorem neque laudantium
+            quas fugiat? Fugiat impedit voluptate consequatur sit, sequi ea
+            eveniet dolorum cumque animi illo nesciunt! Explicabo, sequi
+            facilis! Culpa iste voluptatem doloremque sunt quisquam a debitis
+            voluptatibus ab, nobis at explicabo?
+          </p>
+          <a href="#">Mais</a>
+        </div>
+        <div>
+          <h2>sobre</h2>
+          <p>
+            <span>Sobre</span> Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Iste eaque odio non nulla, tempore assumenda!
+            Neque exercitationem labore, placeat, blanditiis ut quo non sunt,
+            doloribus aspernatur ad laboriosam dicta. Voluptas nam recusandae
+            blanditiis quaerat ab distinctio illo officiis dolorem quod saepe
+            libero tempore dicta sequi dolor quas eaque expedita, obcaecati
+            possimus omnis placeat natus? Maxime sit dolor ea facilis illo
+            perferendis autem ut. Alias similique iure dolorem neque laudantium
+            quas fugiat? Fugiat impedit voluptate consequatur sit, sequi ea
+            eveniet dolorum cumque animi illo nesciunt! Explicabo, sequi
+            facilis! Culpa iste voluptatem doloremque sunt quisquam a debitis
+            voluptatibus ab, nobis at explicabo?
+          </p>
+          <a href="#">Mais</a>
+        </div>
+        <div>
+          <h2>contato</h2>
+          <form>
+            <fieldset>
+              <legend>Contato</legend>
+              <div>
+                <label for="idEmail">Email</label>
+                <input
+                  type="email"
+                  name="txtEmail"
+                  id="idEmail"
+                  placeholder="Digite seu e-mail"
+                />
+              </div>
+              <div>
+                <label for="idTel">Telefone</label>
+                <input
+                  type="tel"
+                  name="txtTel"
+                  id="idTel"
+                  placeholder="Digite seu telefone"
+                />
+              </div>
+              <div>
+                <button type="button">Enviar</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
